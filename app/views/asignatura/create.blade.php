@@ -71,7 +71,9 @@
           '1' => '1', 
           '2' => '2', 
           '3' => '3', 
-          '4' => '4'
+          '4' => '4',
+          '5' => '5',
+          '6' => '6'
     ),null ,array('class' => 'form-control','onChange' => 'calculo()'))}}
     </div>
     {{Form::label('horas_totales', 'Horas Totales', array('class' => 'col-lg-2 control-label'))}}

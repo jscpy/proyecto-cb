@@ -45,7 +45,7 @@
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/">Ciencias Báscias 2014</a>
+          <a class="navbar-brand" href="/">Ciencias Báscias 2015</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
