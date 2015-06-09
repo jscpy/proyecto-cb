@@ -17,7 +17,7 @@
           'IGE' => 'Ingenieria en Gestión Empresarial',
           'ISC' => 'Ingenieria en Sistemas Compútacionales', 
           'LA'  => 'Licenciatura en Administración',
-          'LC'  => 'Licenciatura en Contaduria'
+          'LC'  => 'Licenciatura en Contaduria',
     ),null,array('class' => 'form-control','onChange' => 'showReticula(this.value)'))}}
     </div>
     {{Form::label('semestre','Semestre',array('class' => 'col-lg-1 control-label'))}}

@@ -15,13 +15,13 @@
     <div class="col-lg-4">
          {{Form::select('carrera', 
     array('' => 'Selecciona la Carrera',
-          'ISC' => 'Ingenieria en Sistemas Compútacionales', 
-          'IEM' => 'Ingenieria en Electromecánica', 
-          'LA'  => 'Licenciatura en Administración',
-          'IGE' => 'Ingenieria en Gestión Empresarial',
-          'LC'  => 'Licenciatura en Contaduria',
-          'IBQ' => 'Ingenieria en Bioquimica',
           'ARQ' => 'Arquitectura', 
+          'IBQ' => 'Ingenieria en Bioquimica',
+          'IEM' => 'Ingenieria en Electromecánica', 
+          'IGE' => 'Ingenieria en Gestión Empresarial',
+          'ISC' => 'Ingenieria en Sistemas Compútacionales', 
+          'LA'  => 'Licenciatura en Administración',
+          'LC'  => 'Licenciatura en Contaduria',
     ),'Carrera',array('class' => 'form-control'))}}
     </div>
  </div>
