@@ -16,14 +16,12 @@ class Asignatura extends Eloquent{
 
 		$rules = array(
 
-			'nombre'          => 'required|alpha_spaces|min:7',
+			'nombre'          => 'required|alpha_spaces|min:4',
 			'clave'           => 'required|alpha_num|min:7',
 			'carrera'         => 'required',
 			'semestre'        => 'required',
 			'fk_reticula'     => 'required',
-			'horas_teoricas'  => 'numeric|between:1,4',
-			'horas_practicas' => 'numeric|between:1,4',
-			'horas_totales'   => 'numeric|between:3,6'
+			'horas_totales'   => 'numeric|between:2,6'
 		);
 
 		$validator = Validator::make($data, $rules);

@@ -11,13 +11,13 @@
     <div class="col-lg-4">
      {{Form::select('carrera', 
     array('' => 'Selecciona la Carrera',
-          'ISC' => 'Ingenieria en Sistemas Compútacionales', 
-          'IEM' => 'Ingenieria en Electromecánica', 
-          'LA'  => 'Licenciatura en Administración',
-          'IGE' => 'Ingenieria en Gestión Empresarial',
-          'LC'  => 'Licenciatura en Contaduria',
-          'IBQ' => 'Ingenieria en Bioquimica',
           'ARQ' => 'Arquitectura', 
+          'IBQ' => 'Ingenieria en Bioquimica',
+          'IEM' => 'Ingenieria en Electromecánica', 
+          'IGE' => 'Ingenieria en Gestión Empresarial',
+          'ISC' => 'Ingenieria en Sistemas Compútacionales', 
+          'LA'  => 'Licenciatura en Administración',
+          'LC'  => 'Licenciatura en Contaduria'
     ),null,array('class' => 'form-control','onChange' => 'showReticula(this.value)'))}}
     </div>
     {{Form::label('semestre','Semestre',array('class' => 'col-lg-1 control-label'))}}
@@ -30,7 +30,8 @@
         '4' => '4',
         '5' => '5',
         '6' => '6',
-        '7' => '7'
+        '7' => '7',
+        '8' => '8'
     ),null,array('class' => 'form-control'))}}
     </div>
     {{Form::label('fk_reticula','Reticula',array('class' => 'col-lg-1 control-label'))}}
@@ -42,7 +43,7 @@
 <div class="form-group">
      {{Form::label('nombre','Nombre',array('class' => 'col-lg-2 control-label'))}}
     <div class="col-lg-3">
-    {{Form::text('nombre', Input::old('nombre'), array('class' => 'form-control','maxlength' => '35','onkeyup' => 'this.value = this.value.toUpperCase()','onkeypress' => 'return permite (event, "car")'))}}
+    {{Form::text('nombre', Input::old('nombre'), array('class' => 'form-control','maxlength' => '50','onkeyup' => 'this.value = this.value.toUpperCase()','onkeypress' => 'return permite (event, "car")'))}}
     </div>
      {{Form::label('clave','Clave', array('class' => 'col-lg-2 control-label'))}}
     <div class="col-lg-3">
@@ -58,7 +59,9 @@
           '1' => '1', 
           '2' => '2', 
           '3' => '3', 
-          '4' => '4'
+          '4' => '4',
+          '5' => '5',
+          '6' => '6'
     ),null ,array('class' => 'form-control','onChange' => 'calculo()'))}}
     </div>
     {{Form::label('horas_practicas', 'Horas Prácticas', array('class' => 'col-lg-2 control-label'))}}

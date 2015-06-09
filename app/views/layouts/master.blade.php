@@ -14,11 +14,11 @@
       <link href="/css/jumbotron.css" rel="stylesheet">
       <link href="/css/sticky-footer.css" rel="stylesheet">
     <style type="text/css">
-      h2{text-align: center}
+      h2{text-align: center;}
       #Encabezado1,#Encabezado2,#Encabezado3,#Encabezado4,#Encabezado5,#Encabezado6{text-align: center;} 
       span {font-size: 15px;}
       .glyphicon.glyphicon-eye-close{font-size: 40px;}
-      .glyphicon.glyphicon-asterisk {color: red; font-size: 20px}
+      .glyphicon.glyphicon-asterisk {color: red; font-size: 20px;}
       b {color:red;}
     </style>
 
@@ -85,13 +85,5 @@
 <div class="container" >
 	@yield('content')
 </div>
-
-<!--   Pie de Pagina   
-<div id="footer">
-      <div class="container">
-        <p class="text-muted">Proyecto de Ciencias Básicas 2014.</p>
-        </div>
-    </div>
--->
 </body>
 </html>

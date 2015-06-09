@@ -5,22 +5,18 @@ var iHoras_Practicas = parseInt(document.forms[0].horas_practicas.value);
 var iHoras_Teoricas  = parseInt(document.forms[0].horas_teoricas.value);
 var iHoras_Totales;
 
-iHoras_Totales       = M_Suma(iHoras_Practicas,iHoras_Teoricas);
+iHoras_Totales = M_Suma(iHoras_Practicas,iHoras_Teoricas);
 
+document.forms[0].horas_totales.value = iHoras_Totales.toString();
 
-	if(iHoras_Totales>=3 || iHoras_Totales<=6) {
-			
-		document.forms[0].horas_totales.value = iHoras_Totales.toString();
-	}
-
-
+	/*
 	if (iHoras_Totales<3 || iHoras_Totales>6) {
 
 			
 	alert("El número máximo de horas totales es de 6 y un minímo de 3");		
 
 	//+++++++++++++++++++++++++++******************************++++++++++++++++++++++++++++++++++++
-	/*	if(iHoras_Teoricas == 0 && (iHoras_Practicas == 2||iHoras_Practicas == 1))
+		if(iHoras_Teoricas == 0 && (iHoras_Practicas == 2||iHoras_Practicas == 1))
 		{
 		document.forms[0].horas_practicas.value = 3;
 		iHoras_Practicas = parseInt(document.forms[0].horas_practicas.value); 
@@ -41,7 +37,7 @@ iHoras_Totales       = M_Suma(iHoras_Practicas,iHoras_Teoricas);
 		document.forms[0].horas_totales.value = iHoras_Totales.toString();
 
 		
-		}*/
+		}
 	//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 	if(iHoras_Teoricas == 4 && iHoras_Practicas== 3) {
@@ -70,7 +66,9 @@ iHoras_Totales       = M_Suma(iHoras_Practicas,iHoras_Teoricas);
 	}
 	
 	}
+	*/
 }
+
 
 function M_Suma(iX,iY) {
 	

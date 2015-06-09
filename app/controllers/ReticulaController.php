@@ -82,7 +82,7 @@ class ReticulaController extends BaseController {
         public function destroy ($id){
 
                 $reticula = Reticula::find($id);
-                $mensaje = "es depediente de otros datos y no puede ser borrada";
+                $mensaje = "no puede ser borrada";
 
                 $asignatura = DB::select('SELECT * FROM reticulas, asignaturas 
                         WHERE asignaturas.fk_reticula = reticulas.clave AND reticulas.id = ?', array($id));
