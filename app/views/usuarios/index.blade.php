@@ -4,8 +4,6 @@
 <div class="row">
 <div class="col-md-4 col-md-offset-4"> 
 <form class="form" role="form" method="post" action="/login" accept-charset="utf-8">
-  <h2>Iniciar Sesión</h2>
-    <br/>
     <div class="input-group input-group-lg" >
         <span class="input-group-addon">
             <span class="glyphicon glyphicon-user"></span> 
